@@ -1,0 +1,307 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #1a1a1a;
+    background: currentColor;
+}
+
+header {
+    background-color: #ff4500;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    box-shadow: -3px 0 20px black;
+}
+
+.logo {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+.navigation a{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;   
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+.navigation a:hover {
+    border: 2px solid #f0f0f0;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    color: #ff5314;
+}
+
+section {
+    padding: 100px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.My-logo {
+    position: absolute;
+    top: 190px;
+    left: 73%;
+    border: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    font-size: xx-large;
+    padding: 30px 15px;
+    height: 150px;
+    width: 150px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 10px 10px;
+}
+.My-logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    transform: translate(-4px, -4px);
+    background: linear-gradient(60deg, #ffffff, #fff1eb, #ffe2d8,
+    #ffd4c4, #ffc6b1, #ffb79d, #ffa989, #ff9b76, #ff8d62,
+    #ff8d62, #ff703b, #ff6227, #ff5314) 0 50%;
+    animation: My-logo-animation 2s alternate infinite;
+    background-size: 300% 300%;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.def {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 500px;
+    font-size: xx-large;
+}
+
+.main-btn {
+    position: absolute;
+    top: 370px;
+    left: 395px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 50px;
+    padding: 15px 5px;
+    color: #f0f0f0;
+    font-size: large;
+    background-color: #ff5314;
+    border: #1a1a1a;
+    border-radius: 8px;
+    transition: 0.7s ease;
+}
+.main-btn:hover {
+    transform: scale(1.1);
+}
+.main-btn:active {
+    background-color: #f0f0f0;
+    color: #ff5314;
+}
+
+.presentation h6 {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    color: #1a1a1a;
+    height: 150px;
+    width: 500px;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    font-size: xx-large;
+    padding: 30px 15px;
+    font-weight: 900;
+    letter-spacing: 2px;  
+}
+.presentation h6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    transform: translate(-4px, -4px);
+    background: linear-gradient(60deg, #ffffff, #fff1eb, #ffe2d8,
+    #ffd4c4, #ffc6b1, #ffb79d, #ffa989, #ff9b76, #ff8d62,
+    #ff8d62, #ff703b, #ff6227, #ff5314) 0 50%;
+    animation: My-logo-animation 2s alternate infinite;
+    background-size: 300% 300%;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.social-icons {
+    color: #f0f0f0;
+    padding-right: 30px;
+    font-size: 1.3em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #ff5314;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f0f0f0;
+    width: 21.25em;
+    box-shadow: 0 0 15px #ff8d62;
+    color: #1a1a1a;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #ff5314;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+text-align: center;
+}
+
+.info h3 {
+    color: #1a1a1a;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+ul {
+    text-align: left;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.web {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #ff4500;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.0em;
+    padding-top: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+footer p span {
+    color: #f0f0f0;
+}
+
+.fa-brands {
+    color: #f0f0f0;
+    padding: 20px;
+    
+}
+
+@keyframes My-logo-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@font-face {
+    font-family: blackFont;
+    src: url(https://anirudddh.github.io/hme/fonts/Poppins-Black.ttf);
+
+    font-family: mediumFont;
+    src: url(https://anirudddh.github.io/hme/fonts/Poppins-Medium.ttf);
+
+    font-family: minFont;
+    src: url(https://anirudddh.github.io/hme/fonts/Poppins-ExtraLight.ttf);
+}
+
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navavigation a{
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .presentation h6 {
+        width: 60%;
+        height: auto;
+        left: 0%;
+    }
+
+    .def {
+        left: 0%;
+    }
+
+    .main-btn {
+        left: 73%;
+        height: auto;
+    }
+} 
